@@ -8,16 +8,11 @@
   <meta name="theme-color" content="#23433f">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-  <!-- Social sharing -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sai Kishore">
   <meta property="og:title" content="Sai Kishore | Software Engineer">
   <meta property="og:description" content="Backend services, full-stack applications, and LLM integrations.">
-  <!-- TODO: after the site is live, uncomment and fill in your full site address
-  <meta property="og:url" content="https://your-site-address/">
-  <meta property="og:image" content="https://your-site-address/assets/og-image.png">
-  <link rel="canonical" href="https://your-site-address/">
-  -->
+
   <meta name="twitter:card" content="summary">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +20,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=Figtree:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Turns on scroll animations, unless the visitor prefers reduced motion -->
   <script>
     if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
       document.documentElement.classList.add('motion');
@@ -34,14 +28,7 @@
   <script src="js/main.js" defer></script>
 </head>
 <body>
-  <!--
-    HOW TO EDIT
-    - Text: edit it directly below. Anything in [square brackets] is a placeholder.
-    - Links: a link or button with href="" is hidden automatically. Paste the real URL to show it.
-    - Search this file for TODO to find every placeholder.
-  -->
 
-  <!-- Icon set, used below with <use href="#icon-name"> -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.3-.5-1.5.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></symbol>
     <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
@@ -75,7 +62,6 @@
   </nav>
 
   <main>
-    <!-- 1. ABOUT ME -->
     <section class="hero" id="about" aria-labelledby="about-heading">
       <div class="shell hero-inner">
         <div class="hero-text">
@@ -90,9 +76,6 @@
         </div>
         <div class="headshot-wrap">
           <div class="headshot">
-            <!-- PROFILE PHOTO: save your photo as  assets/headshot.jpg  (lowercase, exactly that name).
-                 It appears automatically. Until then, your initials show instead.
-                 Best size: a portrait about 600 × 750 px, under 150 KB. -->
             <span class="initials" aria-hidden="true">SK</span>
             <img src="assets/headshot.jpg" alt="Portrait of Sai Kishore" width="600" height="750" fetchpriority="high" onerror="this.remove()">
           </div>
@@ -107,7 +90,6 @@
     </section>
 
     <div class="shell">
-      <!-- 2. EXPERIENCE (newest first) -->
       <section class="section" id="experience" aria-labelledby="experience-heading">
         <h2 id="experience-heading">Experience</h2>
         <ol class="timeline">
@@ -118,10 +100,11 @@
                 <h3>Cigna Healthcare</h3>
                 <p class="dates">Aug 2025 – Present, Remote</p>
               </div>
-              <p class="role">Software Engineer</p>
+              <p class="role">Software Engineer - GenAI</p>
               <h4 class="stack-label">Environment / Stack</h4>
               <ul class="tags" aria-label="Cigna Healthcare environment and stack">
-                <li>Java</li><li>Spring Boot</li><li>Spring AI</li><li>PostgreSQL</li><li>Angular</li>
+                <li>Java</li><li>Spring Boot</li><li>Spring AI</li><li>RAG</li><li>LLMs</li>
+                <li>PostgreSQL</li><li>Angular</li>
                 <li>AWS</li><li>MongoDB</li>
               </ul>
             </article>
@@ -157,11 +140,9 @@
               </ul>
             </article>
           </li>
-          <!-- To add another job, copy one <li class="job"> ... </li> block above. -->
         </ol>
       </section>
 
-      <!-- 3. TECHNICAL SKILLS -->
       <section class="section" id="skills" aria-labelledby="skills-heading">
         <h2 id="skills-heading">Technical skills</h2>
         <ul class="skills-grid">
@@ -183,17 +164,12 @@
             <h3>Databases</h3>
             <ul class="tags"><li>PostgreSQL</li><li>SQL</li><li>MongoDB</li></ul>
           </li>
-          <!-- "wide" makes this card fill the rest of the row -->
           <li class="card wide">
             <h3>AI/ML</h3>
             <ul class="tags"><li>Spring AI</li><li>LLM integration</li><li>LLaMA 3.2</li><li>Ollama</li><li>Privacy-preserving ML</li></ul>
           </li>
         </ul>
       </section>
-
-      <!-- 4. CERTIFICATIONS
-           "View certificate" stays hidden until you paste the credential URL into href="".
-           To add one, copy a whole <li class="card cert"> ... </li> block. -->
       <section class="section" id="certifications" aria-labelledby="certifications-heading">
         <h2 id="certifications-heading">Certifications</h2>
         <ul class="certs-grid">
@@ -203,7 +179,6 @@
               <h3>AWS Certified Developer – Associate</h3>
               <p>AWS, 2026</p>
             </div>
-            <!-- TODO: credential URL -->
             <a class="btn" href="https://www.credly.com/badges/4141face-1fbd-4cef-9407-0abc89021014/public_url" target="_blank" rel="noopener noreferrer">View certificate<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
           </li>
           <li class="card cert">
@@ -212,7 +187,6 @@
               <h3>Google Data Analytics</h3>
               <p>Google, 2023</p>
             </div>
-            <!-- TODO: credential URL -->
             <a class="btn" href="https://drive.google.com/file/d/1IMsCm7VfshNrMssDEAXUsISqu3OnYZHR/view?usp=sharing" target="_blank" rel="noopener noreferrer">View certificate<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
           </li>
           <li class="card cert">
@@ -221,19 +195,14 @@
               <h3>5 Star HackerRank Problem Solving</h3>
               <p>HackerRank, 2023</p>
             </div>
-            <!-- TODO: credential URL -->
             <a class="btn" href="https://www.hackerrank.com/profile/saikishore_07" target="_blank" rel="noopener noreferrer">View certificate<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
           </li>
         </ul>
       </section>
 
-      <!-- 5. PROJECTS
-           "View full project" goes to the GitHub repository. The round icon next to it is an optional live demo.
-           Both stay hidden until you paste a URL into href="". -->
       <section class="section" id="projects" aria-labelledby="projects-heading">
         <div class="section-head">
           <h2 id="projects-heading">Projects</h2>
-          <!-- Arrow buttons appear only when there are more projects than fit on screen -->
           <div class="scroll-btns" hidden>
             <button class="scroll-btn" type="button" data-scroll="prev" aria-label="Previous projects" aria-controls="projects-row">
               <svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg>
@@ -243,7 +212,6 @@
             </button>
           </div>
         </div>
-        <!-- To add a project, copy one <li> ... </li> block below. The row scrolls sideways on its own. -->
         <ul class="projects-row" id="projects-row" tabindex="0" aria-label="Projects, scroll sideways for more">
           <li>
             <article class="card project">
@@ -256,9 +224,7 @@
                   <li>Python</li><li>PyMuPDF</li><li>sentence-transformers</li><li>ChromaDB</li><li>Groq API</li>
                 </ul>
                 <div class="project-links">
-                  <!-- TODO: GitHub repository URL -->
                   <a class="btn" href="https://github.com/SaiKishoreReddy07/chat-with-pdf" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="https://github.com/SaiKishoreReddy07/chat-with-pdf"/></svg>View full project</a>
-                  <!-- TODO: live demo URL, if there is one -->
                   <a class="icon-link small" href="" target="_blank" rel="noopener noreferrer" aria-label="Chat with document live demo" title="Live demo"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
                 </div>
               </div>
@@ -275,7 +241,6 @@
                   <li>Python</li><li>Flask</li><li>ESP32</li><li>IoT</li>
                 </ul>
                 <div class="project-links">
-                  <!-- TODO: GitHub repository URL -->
                   <a class="btn" href="https://github.com/SaiKishoreReddy07/IOT_Smart_Cabin_Monitoring" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href=""/></svg>View full project</a>
                   <a class="icon-link small" href="" target="_blank" rel="noopener noreferrer" aria-label="Smart Car Cabin Safety Monitoring System live demo" title="Live demo"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
                 </div>
@@ -295,9 +260,7 @@
                   <li>React</li><li>Java 21</li><li>Spring Boot</li><li>Spring AI</li><li>PostgreSQL</li><li>Docker Compose</li>
                 </ul>
                 <div class="project-links">
-                  <!-- TODO: GitHub repository URL -->
                   <a class="btn" href="" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>View full project</a>
-                  <!-- TODO: live demo URL, if there is one -->
                   <a class="icon-link small" href="" target="_blank" rel="noopener noreferrer" aria-label="GameVault AI live demo" title="Live demo"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
                 </div>
               </div>
